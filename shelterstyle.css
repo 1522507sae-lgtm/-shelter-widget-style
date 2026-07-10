@@ -13,23 +13,10 @@ body {
   overflow-x: hidden;
 }
 
-.l-start__content {
-  width: 100%;
-  max-width: 100%;
-}
-
+.l-start__content,
 .b-start {
   width: 100%;
   max-width: 100%;
-  box-sizing: border-box;
-}
-
-.b-start__filter-field {
-  min-width: 0;
-}
-
-.b-start__field {
-  min-width: 0;
 }
 
 .b-select-ghost {
@@ -37,21 +24,18 @@ body {
   height: 40px !important;
   border: 1px solid #d9d9d9 !important;
   border-radius: 12px !important;
+  background: #ffffff !important;
   background-color: #ffffff !important;
   color: #052555 !important;
-  box-sizing: border-box !important;
   overflow: hidden !important;
+  box-shadow: none !important;
 }
 
-.b-select-ghost:hover {
-  border-color: #d0153a !important;
-}
-
+.b-select-ghost:hover,
 .b-select-ghost:focus,
 .b-select-ghost:focus-within {
   border-color: #d0153a !important;
   outline: none !important;
-  box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.12) !important;
 }
 
 .b-select-ghost-content {
@@ -62,9 +46,9 @@ body {
   color: #052555 !important;
 }
 
-.s-btn,
-.s-btn--primary,
-button.s-btn.s-btn--primary {
+button.s-btn.s-btn--primary,
+.s-btn.s-btn--primary,
+.s-btn--primary {
   min-height: 40px !important;
   height: 40px !important;
   padding: 0 24px !important;
@@ -74,54 +58,33 @@ button.s-btn.s-btn--primary {
   background-color: #d0153a !important;
   color: #ffffff !important;
   box-shadow: none !important;
-  box-sizing: border-box !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
 }
 
-.s-btn:hover,
-.s-btn--primary:hover,
-button.s-btn.s-btn--primary:hover {
+button.s-btn.s-btn--primary:hover,
+.s-btn.s-btn--primary:hover,
+.s-btn--primary:hover {
   border-color: #b91233 !important;
   background: #b91233 !important;
   background-color: #b91233 !important;
   color: #ffffff !important;
 }
 
-.s-btn:focus,
-.s-btn--primary:focus,
-button.s-btn.s-btn--primary:focus {
+button.s-btn.s-btn--primary:focus,
+.s-btn.s-btn--primary:focus,
+.s-btn--primary:focus {
   border-color: #d0153a !important;
   background: #d0153a !important;
   background-color: #d0153a !important;
   color: #ffffff !important;
   outline: none !important;
-  box-shadow: 0 0 0 3px rgba(208, 21, 58, 0.16) !important;
-}
-
-.s-btn:active,
-.s-btn--primary:active,
-button.s-btn.s-btn--primary:active {
-  border-color: #a80f2d !important;
-  background: #a80f2d !important;
-  background-color: #a80f2d !important;
-}
-
-.icon-calendar,
-.icon-guest {
-  color: #d0153a !important;
 }
 
 @media screen and (min-width: 768px) {
   .b-start {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
-  }
-
-  .b-select-ghost,
-  .s-btn,
-  .s-btn--primary,
-  button.s-btn.s-btn--primary {
-    min-height: 40px !important;
-    height: 40px !important;
   }
 }
 
@@ -161,8 +124,6 @@ button.s-btn.s-btn--primary:active {
   }
 
   .b-start__field-label {
-    width: auto !important;
-    min-width: 0 !important;
     margin: 0 !important;
   }
 
@@ -179,9 +140,9 @@ button.s-btn.s-btn--primary:active {
     width: 100% !important;
   }
 
-  .s-btn,
-  .s-btn--primary,
-  button.s-btn.s-btn--primary {
+  button.s-btn.s-btn--primary,
+  .s-btn.s-btn--primary,
+  .s-btn--primary {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
@@ -192,24 +153,5 @@ button.s-btn.s-btn--primary:active {
     background-color: #d0153a !important;
     border-color: #d0153a !important;
     color: #ffffff !important;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .b-start {
-    padding: 16px !important;
-  }
-
-  .b-start__field {
-    grid-template-columns: 92px minmax(0, 1fr) !important;
-    gap: 10px !important;
-  }
-
-  .b-start__field-label {
-    font-size: 14px !important;
-  }
-
-  .b-select-ghost-content {
-    font-size: 16px !important;
   }
 }
