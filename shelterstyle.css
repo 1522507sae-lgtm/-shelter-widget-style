@@ -19,33 +19,12 @@ body {
   max-width: 100%;
 }
 
-.b-start__filter-field--hotels,
-.b-start__filter-field.b-start__filter-field--hotels,
-.b-start > .b-start__filter-field--hotels,
-.b-start > .b-start__filter-field[style*="display:none"],
-.b-start > .b-start__filter-field[style*="display: none"] {
-  display: none !important;
-  visibility: hidden !important;
-  position: absolute !important;
-  width: 0 !important;
-  height: 0 !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  max-width: 0 !important;
-  max-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  pointer-events: none !important;
-}
-
 .b-select-ghost {
   min-height: 40px !important;
   height: 40px !important;
   border: 1px solid #d9d9d9 !important;
   border-radius: 12px !important;
   background: #ffffff !important;
-  background-color: #ffffff !important;
   color: #052555 !important;
   overflow: hidden !important;
   box-shadow: none !important;
@@ -64,9 +43,7 @@ body {
   color: #052555 !important;
 }
 
-button.s-btn.s-btn--primary,
-.s-btn.s-btn--primary,
-.s-btn--primary {
+button.s-btn.s-btn--primary {
   min-height: 40px !important;
   height: 40px !important;
   padding: 0 24px !important;
@@ -80,18 +57,14 @@ button.s-btn.s-btn--primary,
   -webkit-appearance: none !important;
 }
 
-button.s-btn.s-btn--primary:hover,
-.s-btn.s-btn--primary:hover,
-.s-btn--primary:hover {
+button.s-btn.s-btn--primary:hover {
   border-color: #b91233 !important;
   background: #b91233 !important;
   background-color: #b91233 !important;
   color: #ffffff !important;
 }
 
-button.s-btn.s-btn--primary:focus,
-.s-btn.s-btn--primary:focus,
-.s-btn--primary:focus {
+button.s-btn.s-btn--primary:focus {
   border-color: #d0153a !important;
   background: #d0153a !important;
   background-color: #d0153a !important;
@@ -100,9 +73,7 @@ button.s-btn.s-btn--primary:focus,
   box-shadow: 0 0 0 3px rgba(208, 21, 58, 0.16) !important;
 }
 
-button.s-btn.s-btn--primary:active,
-.s-btn.s-btn--primary:active,
-.s-btn--primary:active {
+button.s-btn.s-btn--primary:active {
   border-color: #a80f2d !important;
   background: #a80f2d !important;
   background-color: #a80f2d !important;
@@ -136,6 +107,7 @@ button.s-btn.s-btn--primary:active,
     display: flex !important;
     flex-direction: column !important;
     gap: 12px !important;
+    width: 100% !important;
     margin: 0 !important;
     padding: 16px !important;
   }
@@ -149,26 +121,6 @@ button.s-btn.s-btn--primary:active,
     min-width: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
-  }
-
-  .b-start__filter-field--hotels,
-  .b-start__filter-field.b-start__filter-field--hotels,
-  .b-start > .b-start__filter-field--hotels,
-  .b-start > .b-start__filter-field[style*="display:none"],
-  .b-start > .b-start__filter-field[style*="display: none"] {
-    display: none !important;
-    visibility: hidden !important;
-    position: absolute !important;
-    width: 0 !important;
-    height: 0 !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    max-width: 0 !important;
-    max-height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    pointer-events: none !important;
   }
 
   .b-start__field {
@@ -215,9 +167,7 @@ button.s-btn.s-btn--primary:active,
     padding: 0 !important;
   }
 
-  button.s-btn.s-btn--primary,
-  .s-btn.s-btn--primary,
-  .s-btn--primary {
+  button.s-btn.s-btn--primary {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
@@ -230,4 +180,21 @@ button.s-btn.s-btn--primary:active,
     border-color: #d0153a !important;
     color: #ffffff !important;
   }
+}
+
+html body .l-start__content .b-start > .b-start__filter-field.b-start__filter-field--hotels,
+html body .l-start__content .b-start > .b-start__filter-field:first-child {
+  display: none !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
 }
