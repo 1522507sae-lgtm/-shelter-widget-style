@@ -81,10 +81,24 @@ button.s-btn.s-btn--primary:focus,
   outline: none !important;
 }
 
+button.s-btn.s-btn--primary:active,
+.s-btn.s-btn--primary:active,
+.s-btn--primary:active {
+  border-color: #a80f2d !important;
+  background: #a80f2d !important;
+  background-color: #a80f2d !important;
+}
+
 @media screen and (min-width: 768px) {
   .b-start {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
+  }
+
+  .b-select-ghost,
+  button.s-btn.s-btn--primary {
+    min-height: 40px !important;
+    height: 40px !important;
   }
 }
 
@@ -153,5 +167,24 @@ button.s-btn.s-btn--primary:focus,
     background-color: #d0153a !important;
     border-color: #d0153a !important;
     color: #ffffff !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .b-start {
+    padding: 16px !important;
+  }
+
+  .b-start__field {
+    grid-template-columns: 92px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .b-start__field-label {
+    font-size: 14px !important;
+  }
+
+  .b-select-ghost-content {
+    font-size: 16px !important;
   }
 }
