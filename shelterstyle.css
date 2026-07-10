@@ -19,13 +19,16 @@ body {
   max-width: 100%;
 }
 
+.b-start__filter-field--hotels {
+  display: none !important;
+}
+
 .b-select-ghost {
   min-height: 40px !important;
   height: 40px !important;
   border: 1px solid #d9d9d9 !important;
   border-radius: 12px !important;
   background: #ffffff !important;
-  background-color: #ffffff !important;
   color: #052555 !important;
   overflow: hidden !important;
   box-shadow: none !important;
@@ -36,6 +39,7 @@ body {
 .b-select-ghost:focus-within {
   border-color: #d0153a !important;
   outline: none !important;
+  box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.12) !important;
 }
 
 .b-select-ghost-content {
@@ -79,6 +83,7 @@ button.s-btn.s-btn--primary:focus,
   background-color: #d0153a !important;
   color: #ffffff !important;
   outline: none !important;
+  box-shadow: 0 0 0 3px rgba(208, 21, 58, 0.16) !important;
 }
 
 button.s-btn.s-btn--primary:active,
@@ -107,7 +112,6 @@ button.s-btn.s-btn--primary:active,
   body,
   .l-start__content,
   .b-start,
-  .b-start__filter-field,
   .b-start__submit-field {
     width: 100% !important;
     max-width: 100% !important;
@@ -121,10 +125,17 @@ button.s-btn.s-btn--primary:active,
     padding: 20px !important;
   }
 
-  .b-start__filter-field {
+  .b-start__filter-field:not(.b-start__filter-field--hotels) {
     display: flex !important;
     flex-direction: column !important;
     gap: 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .b-start__filter-field--hotels {
+    display: none !important;
   }
 
   .b-start__field {
@@ -138,6 +149,8 @@ button.s-btn.s-btn--primary:active,
   }
 
   .b-start__field-label {
+    width: auto !important;
+    min-width: 0 !important;
     margin: 0 !important;
   }
 
