@@ -1,84 +1,116 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 input,
 select,
 button,
+a,
+[role="button"],
+[role="combobox"],
 [class*="input"],
 [class*="Input"],
 [class*="select"],
 [class*="Select"],
+[class*="picker"],
+[class*="Picker"],
+[class*="field"],
+[class*="Field"],
 [class*="button"],
-[class*="Button"] {
+[class*="Button"],
+[class*="btn"],
+[class*="Btn"] {
   border-radius: 12px !important;
-  box-sizing: border-box !important;
-}
-
-button,
-input[type="submit"],
-[class*="button"],
-[class*="Button"] {
-  background-color: #D0153A !important;
-  border-color: #D0153A !important;
-  color: #ffffff !important;
-}
-
-button:hover,
-input[type="submit"]:hover,
-[class*="button"]:hover,
-[class*="Button"]:hover {
-  background-color: #B91233 !important;
-  border-color: #B91233 !important;
 }
 
 input,
 select,
+[role="combobox"],
 [class*="input"],
 [class*="Input"],
 [class*="select"],
-[class*="Select"] {
+[class*="Select"],
+[class*="picker"],
+[class*="Picker"],
+[class*="field"],
+[class*="Field"] {
   background-color: #ffffff !important;
-  border-color: #D9D9D9 !important;
+  border-color: #d9d9d9 !important;
   color: #052555 !important;
+}
+
+button,
+input[type="submit"],
+a[role="button"],
+[role="button"],
+[class*="button"],
+[class*="Button"],
+[class*="btn"],
+[class*="Btn"] {
+  background: #d0153a !important;
+  background-color: #d0153a !important;
+  border-color: #d0153a !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+}
+
+button:hover,
+input[type="submit"]:hover,
+a[role="button"]:hover,
+[role="button"]:hover,
+[class*="button"]:hover,
+[class*="Button"]:hover,
+[class*="btn"]:hover,
+[class*="Btn"]:hover {
+  background: #b91233 !important;
+  background-color: #b91233 !important;
+  border-color: #b91233 !important;
+  color: #ffffff !important;
 }
 
 input:focus,
 select:focus,
+[role="combobox"]:focus,
 [class*="input"]:focus,
 [class*="Input"]:focus,
 [class*="select"]:focus,
-[class*="Select"]:focus {
-  border-color: #D0153A !important;
+[class*="Select"]:focus,
+[class*="field"]:focus,
+[class*="Field"]:focus {
+  border-color: #d0153a !important;
   outline: none !important;
-  box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.12) !important;
-}
-
-label,
-[class*="label"],
-[class*="Label"] {
-  color: #052555 !important;
+  box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.14) !important;
 }
 
 @media screen and (min-width: 768px) {
   input,
   select,
   button,
+  [role="button"],
+  [role="combobox"],
   [class*="input"],
   [class*="Input"],
   [class*="select"],
   [class*="Select"],
+  [class*="picker"],
+  [class*="Picker"],
+  [class*="field"],
+  [class*="Field"],
   [class*="button"],
-  [class*="Button"] {
+  [class*="Button"],
+  [class*="btn"],
+  [class*="Btn"] {
     min-height: 40px !important;
     height: 40px !important;
   }
@@ -95,78 +127,37 @@ label,
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
     overflow-x: hidden !important;
   }
 
-  form {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 14px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 16px !important;
-  }
-
-  form > div,
-  form > div > div,
-  [class*="row"],
-  [class*="Row"],
-  [class*="field"],
-  [class*="Field"],
-  [class*="item"],
-  [class*="Item"] {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
+  form,
   form > div {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 8px !important;
-  }
-
-  label,
-  [class*="label"],
-  [class*="Label"] {
-    display: block !important;
     width: 100% !important;
     max-width: 100% !important;
-    margin: 0 !important;
+    min-width: 0 !important;
   }
 
   input,
   select,
   button,
+  [role="button"],
+  [role="combobox"],
   [class*="input"],
   [class*="Input"],
   [class*="select"],
   [class*="Select"],
+  [class*="picker"],
+  [class*="Picker"],
+  [class*="field"],
+  [class*="Field"],
   [class*="button"],
-  [class*="Button"] {
-    display: block !important;
+  [class*="Button"],
+  [class*="btn"],
+  [class*="Btn"] {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
     min-height: 48px !important;
-    height: 48px !important;
-    margin: 0 !important;
-  }
-
-  button,
-  input[type="submit"],
-  [class*="button"],
-  [class*="Button"] {
-    background-color: #D0153A !important;
-    border-color: #D0153A !important;
-    color: #ffffff !important;
+    border-radius: 12px !important;
   }
 }
