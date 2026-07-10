@@ -13,151 +13,203 @@ body {
   overflow-x: hidden;
 }
 
-input,
-select,
-button,
-a,
-[role="button"],
-[role="combobox"],
-[class*="input"],
-[class*="Input"],
-[class*="select"],
-[class*="Select"],
-[class*="picker"],
-[class*="Picker"],
-[class*="field"],
-[class*="Field"],
-[class*="button"],
-[class*="Button"],
-[class*="btn"],
-[class*="Btn"] {
-  border-radius: 12px !important;
+.l-start__content {
+  width: 100%;
+  max-width: 100%;
 }
 
-input,
-select,
-[role="combobox"],
-[class*="input"],
-[class*="Input"],
-[class*="select"],
-[class*="Select"],
-[class*="picker"],
-[class*="Picker"],
-[class*="field"],
-[class*="Field"] {
+.b-start {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.b-start__filter-field {
+  min-width: 0;
+}
+
+.b-start__field {
+  min-width: 0;
+}
+
+.b-select-ghost {
+  min-height: 40px !important;
+  height: 40px !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 12px !important;
   background-color: #ffffff !important;
-  border-color: #d9d9d9 !important;
+  color: #052555 !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.b-select-ghost:hover {
+  border-color: #d0153a !important;
+}
+
+.b-select-ghost:focus,
+.b-select-ghost:focus-within {
+  border-color: #d0153a !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.12) !important;
+}
+
+.b-select-ghost-content {
   color: #052555 !important;
 }
 
-button,
-input[type="submit"],
-a[role="button"],
-[role="button"],
-[class*="button"],
-[class*="Button"],
-[class*="btn"],
-[class*="Btn"] {
+.b-start__field-label {
+  color: #052555 !important;
+}
+
+.s-btn,
+.s-btn--primary,
+button.s-btn.s-btn--primary {
+  min-height: 40px !important;
+  height: 40px !important;
+  padding: 0 24px !important;
+  border: 1px solid #d0153a !important;
+  border-radius: 12px !important;
   background: #d0153a !important;
   background-color: #d0153a !important;
-  border-color: #d0153a !important;
   color: #ffffff !important;
-  border-radius: 12px !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
 }
 
-button:hover,
-input[type="submit"]:hover,
-a[role="button"]:hover,
-[role="button"]:hover,
-[class*="button"]:hover,
-[class*="Button"]:hover,
-[class*="btn"]:hover,
-[class*="Btn"]:hover {
+.s-btn:hover,
+.s-btn--primary:hover,
+button.s-btn.s-btn--primary:hover {
+  border-color: #b91233 !important;
   background: #b91233 !important;
   background-color: #b91233 !important;
-  border-color: #b91233 !important;
   color: #ffffff !important;
 }
 
-input:focus,
-select:focus,
-[role="combobox"]:focus,
-[class*="input"]:focus,
-[class*="Input"]:focus,
-[class*="select"]:focus,
-[class*="Select"]:focus,
-[class*="field"]:focus,
-[class*="Field"]:focus {
+.s-btn:focus,
+.s-btn--primary:focus,
+button.s-btn.s-btn--primary:focus {
   border-color: #d0153a !important;
+  background: #d0153a !important;
+  background-color: #d0153a !important;
+  color: #ffffff !important;
   outline: none !important;
-  box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.14) !important;
+  box-shadow: 0 0 0 3px rgba(208, 21, 58, 0.16) !important;
+}
+
+.s-btn:active,
+.s-btn--primary:active,
+button.s-btn.s-btn--primary:active {
+  border-color: #a80f2d !important;
+  background: #a80f2d !important;
+  background-color: #a80f2d !important;
+}
+
+.icon-calendar,
+.icon-guest {
+  color: #d0153a !important;
 }
 
 @media screen and (min-width: 768px) {
-  input,
-  select,
-  button,
-  [role="button"],
-  [role="combobox"],
-  [class*="input"],
-  [class*="Input"],
-  [class*="select"],
-  [class*="Select"],
-  [class*="picker"],
-  [class*="Picker"],
-  [class*="field"],
-  [class*="Field"],
-  [class*="button"],
-  [class*="Button"],
-  [class*="btn"],
-  [class*="Btn"] {
-    min-height: 40px !important;
-    height: 40px !important;
-  }
-
-  form {
+  .b-start {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
+  }
+
+  .b-select-ghost,
+  .s-btn,
+  .s-btn--primary,
+  button.s-btn.s-btn--primary {
+    min-height: 40px !important;
+    height: 40px !important;
   }
 }
 
 @media screen and (max-width: 767px) {
   html,
-  body {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    overflow-x: hidden !important;
-  }
-
-  form,
-  form > div {
+  body,
+  .l-start__content,
+  .b-start,
+  .b-start__filter-field,
+  .b-start__submit-field {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
   }
 
-  input,
-  select,
-  button,
-  [role="button"],
-  [role="combobox"],
-  [class*="input"],
-  [class*="Input"],
-  [class*="select"],
-  [class*="Select"],
-  [class*="picker"],
-  [class*="Picker"],
-  [class*="field"],
-  [class*="Field"],
-  [class*="button"],
-  [class*="Button"],
-  [class*="btn"],
-  [class*="Btn"] {
+  .b-start {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 20px !important;
+  }
+
+  .b-start__filter-field {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .b-start__field {
+    display: grid !important;
+    grid-template-columns: 110px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .b-start__field-label {
+    width: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+  }
+
+  .b-select-ghost {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
     min-height: 48px !important;
+    height: 48px !important;
     border-radius: 12px !important;
+  }
+
+  .b-start__submit-field {
+    width: 100% !important;
+  }
+
+  .s-btn,
+  .s-btn--primary,
+  button.s-btn.s-btn--primary {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 48px !important;
+    height: 48px !important;
+    border-radius: 12px !important;
+    background: #d0153a !important;
+    background-color: #d0153a !important;
+    border-color: #d0153a !important;
+    color: #ffffff !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .b-start {
+    padding: 16px !important;
+  }
+
+  .b-start__field {
+    grid-template-columns: 92px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .b-start__field-label {
+    font-size: 14px !important;
+  }
+
+  .b-select-ghost-content {
+    font-size: 16px !important;
   }
 }
