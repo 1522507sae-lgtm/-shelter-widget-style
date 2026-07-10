@@ -19,8 +19,14 @@ body {
   max-width: 100%;
 }
 
-.b-start__filter-field--hotels {
+html body .b-start .b-start__filter-field.b-start__filter-field--hotels {
   display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 .b-select-ghost {
@@ -42,10 +48,7 @@ body {
   box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.12) !important;
 }
 
-.b-select-ghost-content {
-  color: #052555 !important;
-}
-
+.b-select-ghost-content,
 .b-start__field-label {
   color: #052555 !important;
 }
@@ -83,27 +86,12 @@ button.s-btn.s-btn--primary:focus,
   background-color: #d0153a !important;
   color: #ffffff !important;
   outline: none !important;
-  box-shadow: 0 0 0 3px rgba(208, 21, 58, 0.16) !important;
-}
-
-button.s-btn.s-btn--primary:active,
-.s-btn.s-btn--primary:active,
-.s-btn--primary:active {
-  border-color: #a80f2d !important;
-  background: #a80f2d !important;
-  background-color: #a80f2d !important;
 }
 
 @media screen and (min-width: 768px) {
   .b-start {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
-  }
-
-  .b-select-ghost,
-  button.s-btn.s-btn--primary {
-    min-height: 40px !important;
-    height: 40px !important;
   }
 }
 
@@ -112,59 +100,73 @@ button.s-btn.s-btn--primary:active,
   body,
   .l-start__content,
   .b-start,
+  .b-start__filter-field,
   .b-start__submit-field {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
   }
 
+  html body .b-start .b-start__filter-field.b-start__filter-field--hotels {
+    display: none !important;
+  }
+
   .b-start {
     display: flex !important;
     flex-direction: column !important;
-    gap: 16px !important;
-    padding: 20px !important;
+    gap: 10px !important;
+    margin: 0 !important;
+    padding: 12px !important;
   }
 
   .b-start__filter-field:not(.b-start__filter-field--hotels) {
     display: flex !important;
     flex-direction: column !important;
-    gap: 14px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  .b-start__filter-field--hotels {
-    display: none !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .b-start__field {
     display: grid !important;
-    grid-template-columns: 110px minmax(0, 1fr) !important;
+    grid-template-columns: 92px minmax(0, 1fr) !important;
     align-items: center !important;
-    gap: 12px !important;
+    gap: 10px !important;
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
+    height: 44px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .b-start__field-label {
     width: auto !important;
     min-width: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
   }
 
   .b-select-ghost {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    min-height: 48px !important;
-    height: 48px !important;
+    min-height: 44px !important;
+    height: 44px !important;
+    margin: 0 !important;
     border-radius: 12px !important;
+  }
+
+  .b-select-ghost-content {
+    font-size: 16px !important;
   }
 
   .b-start__submit-field {
     width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   button.s-btn.s-btn--primary,
@@ -173,31 +175,13 @@ button.s-btn.s-btn--primary:active,
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    min-height: 48px !important;
-    height: 48px !important;
+    min-height: 44px !important;
+    height: 44px !important;
+    margin: 0 !important;
     border-radius: 12px !important;
     background: #d0153a !important;
     background-color: #d0153a !important;
     border-color: #d0153a !important;
     color: #ffffff !important;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .b-start {
-    padding: 16px !important;
-  }
-
-  .b-start__field {
-    grid-template-columns: 92px minmax(0, 1fr) !important;
-    gap: 10px !important;
-  }
-
-  .b-start__field-label {
-    font-size: 14px !important;
-  }
-
-  .b-select-ghost-content {
-    font-size: 16px !important;
   }
 }
