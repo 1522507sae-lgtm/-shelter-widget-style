@@ -19,10 +19,14 @@ body {
   max-width: 100%;
 }
 
-html body .b-start .b-start__filter-field.b-start__filter-field--hotels {
+.b-start__filter-field--hotels,
+.b-start__filter-field.b-start__filter-field--hotels,
+.b-start > .b-start__filter-field--hotels {
   display: none !important;
+  visibility: hidden !important;
   width: 0 !important;
   height: 0 !important;
+  min-width: 0 !important;
   min-height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -78,16 +82,6 @@ button.s-btn.s-btn--primary:hover,
   color: #ffffff !important;
 }
 
-button.s-btn.s-btn--primary:focus,
-.s-btn.s-btn--primary:focus,
-.s-btn--primary:focus {
-  border-color: #d0153a !important;
-  background: #d0153a !important;
-  background-color: #d0153a !important;
-  color: #ffffff !important;
-  outline: none !important;
-}
-
 @media screen and (min-width: 768px) {
   .b-start {
     padding-top: 12px !important;
@@ -107,22 +101,24 @@ button.s-btn.s-btn--primary:focus,
     min-width: 0 !important;
   }
 
-  html body .b-start .b-start__filter-field.b-start__filter-field--hotels {
+  .b-start__filter-field--hotels,
+  .b-start__filter-field.b-start__filter-field--hotels,
+  .b-start > .b-start__filter-field--hotels {
     display: none !important;
   }
 
   .b-start {
     display: flex !important;
     flex-direction: column !important;
-    gap: 10px !important;
+    gap: 12px !important;
     margin: 0 !important;
-    padding: 12px !important;
+    padding: 16px !important;
   }
 
   .b-start__filter-field:not(.b-start__filter-field--hotels) {
     display: flex !important;
     flex-direction: column !important;
-    gap: 8px !important;
+    gap: 12px !important;
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -135,7 +131,7 @@ button.s-btn.s-btn--primary:focus,
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    height: 44px !important;
+    height: 48px !important;
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -153,8 +149,8 @@ button.s-btn.s-btn--primary:focus,
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    min-height: 44px !important;
-    height: 44px !important;
+    min-height: 48px !important;
+    height: 48px !important;
     margin: 0 !important;
     border-radius: 12px !important;
   }
@@ -175,8 +171,8 @@ button.s-btn.s-btn--primary:focus,
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    min-height: 44px !important;
-    height: 44px !important;
+    min-height: 48px !important;
+    height: 48px !important;
     margin: 0 !important;
     border-radius: 12px !important;
     background: #d0153a !important;
