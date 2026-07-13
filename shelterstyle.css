@@ -16,8 +16,6 @@ body {
 .l-start__content {
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
   background: transparent !important;
   box-shadow: none !important;
 }
@@ -25,8 +23,6 @@ body {
 .b-start {
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 18px 20px;
   background: #ffffff !important;
   border: 0 !important;
   border-radius: 16px !important;
@@ -39,19 +35,13 @@ body {
   box-shadow: none !important;
 }
 
-.b-start__field-label {
-  color: #333333 !important;
-}
-
 .b-select-ghost {
-  min-height: 40px !important;
-  height: 40px !important;
   border: 1px solid #d9d9d9 !important;
   border-radius: 12px !important;
   background: #ffffff !important;
   color: #052555 !important;
-  overflow: hidden !important;
   box-shadow: none !important;
+  overflow: hidden !important;
 }
 
 .b-select-ghost:hover,
@@ -62,7 +52,8 @@ body {
   box-shadow: 0 0 0 2px rgba(208, 21, 58, 0.12) !important;
 }
 
-.b-select-ghost-content {
+.b-select-ghost-content,
+.b-start__field-label {
   color: #052555 !important;
 }
 
@@ -102,127 +93,4 @@ button.s-btn.s-btn--primary:active {
   background: #a80f2d !important;
   background-color: #a80f2d !important;
   box-shadow: none !important;
-}
-
-html body .l-start__content .b-start > .b-start__filter-field.b-start__filter-field--hotels,
-html body .l-start__content .b-start > .b-start__filter-field:first-child {
-  display: none !important;
-  visibility: hidden !important;
-  position: absolute !important;
-  width: 0 !important;
-  height: 0 !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  max-width: 0 !important;
-  max-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  pointer-events: none !important;
-}
-
-@media screen and (min-width: 768px) {
-  .b-start {
-    padding-top: 18px !important;
-    padding-bottom: 18px !important;
-  }
-
-  .b-select-ghost,
-  button.s-btn.s-btn--primary {
-    min-height: 40px !important;
-    height: 40px !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  html,
-  body,
-  .l-start__content,
-  .b-start,
-  .b-start__submit-field {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  .b-start {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-    margin: 0 !important;
-    padding: 16px !important;
-    border-radius: 16px !important;
-    box-shadow: none !important;
-  }
-
-  .b-start > .b-start__filter-field:not(.b-start__filter-field--hotels) {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .b-start__field {
-    display: grid !important;
-    grid-template-columns: 92px minmax(0, 1fr) !important;
-    align-items: center !important;
-    gap: 10px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    height: 48px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .b-start__field-label {
-    width: auto !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 14px !important;
-    line-height: 1.2 !important;
-  }
-
-  .b-select-ghost {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    min-height: 48px !important;
-    height: 48px !important;
-    margin: 0 !important;
-    border-radius: 12px !important;
-    box-shadow: none !important;
-  }
-
-  .b-select-ghost-content {
-    font-size: 16px !important;
-  }
-
-  .b-start__submit-field {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  button.s-btn.s-btn--primary {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    min-height: 48px !important;
-    height: 48px !important;
-    margin: 0 !important;
-    border-radius: 12px !important;
-    background: #d0153a !important;
-    background-color: #d0153a !important;
-    border-color: #d0153a !important;
-    color: #ffffff !important;
-    box-shadow: none !important;
-  }
 }
